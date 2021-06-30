@@ -1,0 +1,84 @@
+header {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 166, 0);
+    overflow: hidden;
+    padding: 5px;
+}
+
+#logo img {
+    width: 100px;
+}
+
+#logo {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#logo:hover {
+    animation: link_header;
+    animation-duration: 0.5s;
+    background: rgb(245, 106, 0);
+}
+
+#menu-mobile {
+    display: none
+}
+
+.nav-right {
+    float: right;
+    margin-top: 40px;
+    width: auto;
+    /*   background: red;*/
+}
+
+.nav-right ul {
+    list-style: none;
+}
+
+.nav-right ul li {
+    display: inline-block;
+    margin: 4px;
+    margin-top: 40px;
+    ;
+}
+
+.nav-right ul li a {
+    padding: 15px;
+    padding-bottom: 20px;
+    border: 1px hidden rgb(245, 106, 0);
+    ;
+    font-weight: bold;
+    border-radius: 20px;
+    color: rgb(128, 34, 0);
+}
+
+.nav-right ul li a:hover {
+    animation: link_header;
+    animation-duration: 0.5s;
+    background: rgb(245, 106, 0);
+    ;
+}
+
+.nav-left {
+    float: left;
+    margin-top: 0;
+    width: auto;
+    /*  background: blue;*/
+    text-align: center;
+}
+
+.nav-left h2 {
+    color: rgba(194, 194, 194, 0.323);
+    text-shadow: 2px 2px rgb(146, 39, 0);
+}
+
+@keyframes link_header {
+    from {
+        background: none;
+    }
+    to {
+        background: rgb(245, 106, 0);
+        ;
+    }
+}
