@@ -1,3 +1,5 @@
+/*header*/
+
 header {
     width: 100%;
     margin: auto;
@@ -5,6 +7,9 @@ header {
     overflow: hidden;
     padding: 5px;
 }
+
+
+/*logo*/
 
 #logo img {
     width: 100px;
@@ -21,9 +26,32 @@ header {
     background: rgb(245, 106, 0);
 }
 
+
+/*menu mobile*/
+
 #menu-mobile {
-    display: none
+    display: none;
+    width: auto;
+    margin-left: 52px;
+    border-radius: 20px;
 }
+
+#menu-mobile img {
+    width: 80px;
+}
+
+#menu-mobile:hover {
+    animation: link_header;
+    animation-duration: 0.5s;
+    background: rgb(245, 106, 0);
+    cursor: pointer;
+}
+
+
+/*menu principal*/
+
+
+/*nav right*/
 
 .nav-right {
     float: right;
@@ -50,7 +78,7 @@ header {
     border-radius: 20px;
     color: rgb(128, 34, 0);
     animation: link_header_d;
-    animation-duration: 0.5s;
+    animation-duration: 0.1s;
 }
 
 .nav-right ul li a:hover {
@@ -59,6 +87,9 @@ header {
     background: rgb(245, 106, 0);
     ;
 }
+
+
+/*nav center*/
 
 .navcenter input {
     width: 70%;
@@ -70,19 +101,16 @@ header {
     background-position: right;
     border: 1px hidden;
     animation: search_animation_d;
-    animation-duration: 0.5s;
+    animation-duration: 0.1s;
 }
 
 .navcenter input:hover {
     animation: search_animation;
     animation-duration: 0.5s;
-    width: 80%;
+    width: 75%;
 }
 
 .navcenter {
-    /* position: relative;
-    top: 90px;
-    left: 10px;*/
     display: inline-block;
     width: 400px;
     height: auto;
@@ -90,6 +118,9 @@ header {
     margin-left: 0;
     margin-bottom: 0;
 }
+
+
+/*nav left*/
 
 .nav-left {
     float: left;
@@ -131,13 +162,13 @@ header {
         width: 70%;
     }
     100% {
-        width: 80%;
+        width: 75%;
     }
 }
 
 @keyframes search_animation_d {
     0% {
-        width: 80%;
+        width: 75%;
     }
     100% {
         width: 70%;
@@ -145,4 +176,22 @@ header {
 }
 
 
-/* */
+/*media query */
+
+@media screen and (max-width:532px) {
+    .nav-right {
+        margin-right: 40%;
+    }
+    .nav-right ul li {
+        display: none;
+        text-align: center;
+    }
+    #menu-mobile {
+        display: block;
+        margin: auto;
+    }
+    .navcenter {
+        width: 300px;
+        margin-left: 20px;
+    }
+}
