@@ -33,8 +33,6 @@ header {
 #menu-mobile {
     display: none;
     width: auto;
-    margin-left: 52px;
-    border-radius: 20px;
 }
 
 #menu-mobile input {
@@ -45,6 +43,7 @@ header {
 #menu-mobile label {
     cursor: pointer;
     position: relative;
+    left: 150px;
     bottom: 16px;
 }
 
@@ -230,15 +229,23 @@ label span:nth-child(3) {
     }
     .nav-right ul li a {
         padding: 5px;
+        font-size: 10px;
     }
-}
-
-#menu-mobile {
-    display: block;
-    margin: auto;
-}
-
-.navcenter {
-    width: 300px;
-    margin-left: 20px;
+    #menu-mobile {
+        display: block;
+        margin-right: 200px;
+    }
+    #menucentral ul {
+        display: none;
+    }
+    #menucentral {
+        opacity: 0;
+        margin-left: 120px;
+    }
+    #menucentral.active {
+        opacity: 1;
+    }
+    #menucentral.active ul {
+        display: block
+    }
 }
