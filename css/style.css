@@ -200,6 +200,11 @@
                 width: 70%;
             }
         }
+        /*aside*/
+        
+        aside {
+            width: auto
+        }
         
         .aside-principal {
             background-color: rgb(255, 255, 255);
@@ -234,12 +239,12 @@
         }
         
         .redes_sociais ul li.facebook a:hover {
-            background: blue;
+            background: rgb(0, 30, 255);
             color: white;
         }
         
         .redes_sociais ul li.twitter a:hover {
-            background: aquamarine;
+            background: rgb(0, 238, 255);
             color: white;
         }
         
@@ -260,6 +265,24 @@
         .redes_sociais ul li.github a:hover img {
             filter: invert(100%);
         }
+        /*section */
+        
+        .posting {
+            width: 70%;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            overflow-y: scroll;
+            box-shadow: 3px 3px 3px black;
+        }
+        
+        .posting::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .aside-principal,
+        .posting {
+            display: inline-block;
+        }
         /*media query */
         
         @media screen and (max-width: 535px) {
@@ -269,6 +292,9 @@
             .nav-right ul li {
                 display: block;
                 margin: 9px;
+            }
+            .navcenter {
+                width: 300px;
             }
             .nav-right ul li a {
                 padding: 5px;
@@ -294,7 +320,10 @@
             .aside-principal {
                 width: 100%;
                 text-align: center;
-                height: 100px;
+                height: auto;
+                overflow: hidden;
+            }
+            .posting {
+                width: 100%;
             }
         }
-        /*aside*/
