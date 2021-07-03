@@ -270,18 +270,41 @@
         .posting {
             width: 70%;
             height: 500px;
+            margin-top: 5px;
             background-color: rgb(255, 255, 255);
             overflow-y: scroll;
-            box-shadow: 3px 3px 3px black;
+            border: 2px solid orangered;
+            border-style: hidden solid hidden solid;
         }
         
         .posting::-webkit-scrollbar {
-            display: none;
+            filter: opacity(0)
         }
         
         .aside-principal,
         .posting {
             display: inline-block;
+        }
+        
+        .pag {
+            width: 80%;
+            height: 400px;
+            max-height: 500px;
+            display: block;
+            margin: auto;
+            background: rgb(232, 207, 163);
+            margin-bottom: 20px;
+            border-radius: 30px;
+        }
+        
+        footer {
+            width: 100%;
+            background-color: rgb(255, 166, 0);
+            padding: 10px;
+        }
+        
+        footer img {
+            width: 30px;
         }
         /*media query */
         
